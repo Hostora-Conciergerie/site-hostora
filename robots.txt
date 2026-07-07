@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sensational-rabanadas-ee5eea.netlify.app/sitemap.xml
