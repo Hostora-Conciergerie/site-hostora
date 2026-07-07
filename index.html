@@ -115,20 +115,22 @@
   .hero-photo img{width:100%;height:100%;object-fit:cover}
   .hero-badge{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.94);padding:12px 16px;border-radius:14px;font-size:13px;color:var(--muted);box-shadow:0 8px 24px -12px rgba(0,0,0,.3)}
   .pay-bubbles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-  .pay-bubble{position:absolute;display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.4);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);padding:8px 14px;border-radius:12px;border:1px solid rgba(61,92,74,.14);opacity:0}
-  .pb-amount{font-family:'Fraunces',serif;font-size:15px;font-weight:600;color:var(--accent);white-space:nowrap}
+  .pay-bubble{position:absolute;display:flex;flex-direction:column;gap:1px;background:rgba(192,122,82,.1);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);padding:8px 14px;border-radius:12px;border:1px solid rgba(192,122,82,.28);opacity:0}
+  .pb-amount{font-family:'Fraunces',serif;font-size:15px;font-weight:600;color:var(--terra);white-space:nowrap}
   .pb-label{font-size:9.5px;color:var(--muted);letter-spacing:.03em;text-transform:uppercase}
-  .pb1{top:8%;left:2%;animation:bubbleFloat 18s ease-in-out infinite}
-  .pb2{top:14%;right:3%;animation:bubbleFloat 18s ease-in-out infinite 3s}
-  .pb3{bottom:12%;left:1%;animation:bubbleFloat 18s ease-in-out infinite 6s}
-  .pb4{bottom:16%;right:2%;animation:bubbleFloat 18s ease-in-out infinite 9s}
-  .pb5{top:45%;left:0;animation:bubbleFloat 18s ease-in-out infinite 12s}
-  .pb6{top:52%;right:0;animation:bubbleFloat 18s ease-in-out infinite 15s}
+  .pb1{top:6%;left:6%;animation:bubbleFloat 9s ease-in-out infinite 0s}
+  .pb2{top:10%;left:38%;animation:bubbleFloat 9s ease-in-out infinite 1.1s}
+  .pb3{top:8%;right:8%;animation:bubbleFloat 9s ease-in-out infinite 2.2s}
+  .pb4{top:46%;left:16%;animation:bubbleFloat 9s ease-in-out infinite 3.3s}
+  .pb5{top:50%;right:18%;animation:bubbleFloat 9s ease-in-out infinite 4.4s}
+  .pb6{bottom:14%;left:9%;animation:bubbleFloat 9s ease-in-out infinite 5.5s}
+  .pb7{bottom:10%;left:44%;animation:bubbleFloat 9s ease-in-out infinite 6.6s}
+  .pb8{bottom:16%;right:10%;animation:bubbleFloat 9s ease-in-out infinite 7.7s}
   @keyframes bubbleFloat{
-    0%{opacity:0;transform:translateY(10px) scale(.94)}
-    10%{opacity:.85;transform:translateY(0) scale(1)}
-    38%{opacity:.85;transform:translateY(0) scale(1)}
-    48%{opacity:0;transform:translateY(-10px) scale(.94)}
+    0%{opacity:0;transform:translateY(8px) scale(.94)}
+    7%{opacity:.9;transform:translateY(0) scale(1)}
+    38%{opacity:.9;transform:translateY(0) scale(1)}
+    46%{opacity:0;transform:translateY(-8px) scale(.94)}
     100%{opacity:0}
   }
   @media(prefers-reduced-motion:reduce){.pay-bubble{animation:none;opacity:0}}
@@ -173,7 +175,8 @@
   .head p{color:var(--muted);margin-top:14px;font-size:17px}
 
   /* Services (grouped) */
-  .services{background:var(--surface)}
+  .services{background:var(--surface);position:relative;overflow:hidden}
+  .services .wrap{position:relative;z-index:1}
   .svc-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   .svc{border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;background:var(--bg);transition:border-color .2s,transform .2s}
   .svc:hover{border-color:var(--accent);box-shadow:var(--shadow)}
@@ -430,6 +433,8 @@
     <div class="pay-bubble pb4"><span class="pb-amount">+690&nbsp;€</span><span class="pb-label">Virement Booking</span></div>
     <div class="pay-bubble pb5"><span class="pb-amount">+1&nbsp;180&nbsp;€</span><span class="pb-label">Virement Airbnb</span></div>
     <div class="pay-bubble pb6"><span class="pb-amount">+348&nbsp;€</span><span class="pb-label">Virement Abritel</span></div>
+    <div class="pay-bubble pb7"><span class="pb-amount">+520&nbsp;€</span><span class="pb-label">Virement Booking</span></div>
+    <div class="pay-bubble pb8"><span class="pb-amount">+975&nbsp;€</span><span class="pb-label">Virement Airbnb</span></div>
   </div>
   <div class="wrap hero-grid">
     <div>
@@ -525,6 +530,12 @@
 
 <!-- SERVICES -->
 <section id="services" class="services">
+  <div class="pay-bubbles" aria-hidden="true">
+    <div class="pay-bubble pb1"><span class="pb-amount">+610&nbsp;€</span><span class="pb-label">Virement Airbnb</span></div>
+    <div class="pay-bubble pb3"><span class="pb-amount">+340&nbsp;€</span><span class="pb-label">Virement Abritel</span></div>
+    <div class="pay-bubble pb6"><span class="pb-amount">+780&nbsp;€</span><span class="pb-label">Virement Booking</span></div>
+    <div class="pay-bubble pb8"><span class="pb-amount">+1&nbsp;050&nbsp;€</span><span class="pb-label">Virement Airbnb</span></div>
+  </div>
   <div class="wrap">
     <div class="head center">
       <span class="eyebrow">Nos services</span>
