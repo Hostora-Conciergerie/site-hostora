@@ -56,11 +56,11 @@
 
 
   /* Scroll reveal (progressive enhancement) */
-  .js .svc,.js .tl-step,.js .prop,.js .place,.js .plan,.js .gstat,.js .head,.js .gallery-grid a,.js .town{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s cubic-bezier(.22,1,.36,1)}
-  .js .place,.js .gallery-grid a{transform:translateY(28px) scale(.9)}
+  .js .svc,.js .tl-step,.js .prop,.js .place,.js .plan,.js .gstat,.js .head,.js .town{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s cubic-bezier(.22,1,.36,1)}
+  .js .place{transform:translateY(28px) scale(.9)}
   .js .in{opacity:1!important;transform:none!important}
   @media (prefers-reduced-motion: reduce){
-    .js .svc,.js .tl-step,.js .prop,.js .place,.js .plan,.js .gstat,.js .head,.js .gallery-grid a,.js .town{opacity:1;transform:none;transition:none}
+    .js .svc,.js .tl-step,.js .prop,.js .place,.js .plan,.js .gstat,.js .head,.js .town{opacity:1;transform:none;transition:none}
     html{scroll-behavior:auto}
   }
 
@@ -374,6 +374,7 @@
     .sq3{width:100px;height:100px;top:6%;right:-32px}
     .sq2{top:80%;left:-20px}
     .sq4{top:82%;right:-16px}
+    .marquee-track{animation-duration:110s}
   }
 </style>
 </head>
@@ -814,7 +815,7 @@
     <div class="contact-grid">
       <div class="contact-info">
         <p>Le plus simple, c'est de nous appeler ou de nous écrire. On répond en général dans la journée.</p>
-        <div class="contact-line"><span class="ico">📞</span><a href="tel:+33749241201">07 49 24 12 01</a></div>
+        <div class="contact-line"><span class="ico">📞</span><a href="tel:+33749241201">+33 7 49 24 12 01</a></div>
         <div class="contact-line"><span class="ico">✉️</span><a href="mailto:Hostora.conciergerie@gmail.com">Hostora.conciergerie@gmail.com</a></div>
         <div class="contact-line"><span class="ico">📍</span><span>Saint-Louis et alentours (68)</span></div>
       </div>
@@ -857,7 +858,7 @@
       </div>
       <div>
         <h4>Contact</h4>
-        <a href="tel:+33749241201">07 49 24 12 01</a>
+        <a href="tel:+33749241201">+33 7 49 24 12 01</a>
         <a href="mailto:Hostora.conciergerie@gmail.com">Hostora.conciergerie@gmail.com</a>
         <a href="#zone">Saint-Louis et alentours (68)</a>
       </div>
@@ -899,7 +900,7 @@
   // Reveal on scroll + count-up numbers (viewport check, works everywhere)
   (function(){
     var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var reveals=[].slice.call(document.querySelectorAll('.svc,.tl-step,.prop,.place,.plan,.gstat,.head,.gallery-grid a,.town'));
+    var reveals=[].slice.call(document.querySelectorAll('.svc,.tl-step,.prop,.place,.plan,.gstat,.head,.town'));
     var counters=[].slice.call(document.querySelectorAll('.count'));
     var bars=[].slice.call(document.querySelectorAll('.bar-fill'));
     function fillBar(f){f.style.height=(f.getAttribute('data-h')||0)+'%';}
