@@ -26,9 +26,9 @@ header{position:sticky;top:0;z-index:60;background:rgba(250,247,242,.96);backdro
 .nav{display:flex;align-items:center;justify-content:space-between;height:88px}
 .brand{display:flex;flex-direction:column;line-height:.92;padding:2px 0}
 .wordmark{display:flex;align-items:baseline;line-height:1}
-.wm-h{font-family:'Fraunces',serif;font-style:italic;font-weight:700;font-size:38px;line-height:1;color:#bf8a30;margin-right:2px}
-.wm-rest{font-family:'Fraunces',serif;font-size:26px;font-weight:600;color:var(--ink);letter-spacing:.02em}
-.brand em{font-style:normal;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-top:2px;font-weight:600;padding-left:2px}
+.wm-h{font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:33px;line-height:1;color:#b6862a;margin-right:1px;letter-spacing:-.01em}
+.wm-rest{font-family:'Fraunces',serif;font-size:27px;font-weight:600;color:var(--ink);letter-spacing:.005em}
+.brand em{font-style:normal;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--accent);margin-top:4px;font-weight:600;padding-left:3px}
 .nav-cta{display:flex;gap:14px;align-items:center}
 .nav-back{font-size:15px;font-weight:600;color:var(--ink)}
 .nav-back:hover{color:var(--accent)}

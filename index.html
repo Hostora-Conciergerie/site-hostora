@@ -74,9 +74,9 @@
   .nav-social svg{width:16px;height:16px;fill:currentColor}
   .brand{display:flex;flex-direction:column;line-height:.92;padding:2px 0}
   .wordmark{display:flex;align-items:baseline;line-height:1}
-  .wm-h{font-family:'Fraunces',serif;font-style:italic;font-weight:700;font-size:38px;line-height:1;color:#bf8a30;margin-right:2px}
-  .wm-rest{font-family:'Fraunces',serif;font-size:26px;font-weight:600;color:var(--ink);letter-spacing:.02em}
-  .brand em{font-style:normal;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-top:2px;font-weight:600;padding-left:2px}
+  .wm-h{font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:33px;line-height:1;color:#b6862a;margin-right:1px;letter-spacing:-.01em}
+  .wm-rest{font-family:'Fraunces',serif;font-size:27px;font-weight:600;color:var(--ink);letter-spacing:.005em}
+  .brand em{font-style:normal;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--accent);margin-top:4px;font-weight:600;padding-left:3px}
   .nav-links{display:flex;gap:32px;align-items:center}
   .nav-links a:not(.btn){position:relative;font-size:15.5px;font-weight:600;color:var(--ink);transition:color .25s}
   .nav-links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--accent);border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.22,1,.36,1)}
@@ -135,12 +135,7 @@
     100%{opacity:0}
   }
   @media(prefers-reduced-motion:reduce){.pay-bubble{animation:none;opacity:0}}
-  @media(max-width:760px){
-    .pb2,.pb3,.pb6,.pb7{display:none}
-    .pay-bubble{padding:6px 11px}
-    .pb-amount{font-size:13px}
-    .pb-label{font-size:8.5px}
-  }
+  @media(max-width:760px){.pay-bubbles{display:none}}
   .hero-badge b{display:block;font-family:'Fraunces',serif;font-size:17px;color:var(--ink)}
   .tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:13px;font-weight:500;padding:6px 14px;border-radius:999px;margin-bottom:20px}
 
@@ -386,7 +381,7 @@
   @media(max-width:760px){
     .hero-grid,.about-grid,.contact-grid,.props,.plans,.review-grid,footer .f-grid,.market{grid-template-columns:1fr}
     .market{gap:34px}
-    .hero-photo{aspect-ratio:16/10;max-height:38vh;max-width:440px;margin:0 auto}
+    .hero-photo{aspect-ratio:3/2;max-height:34vh;max-width:400px;margin:0 auto}
   }
   @media(max-width:560px){
     .place-grid{grid-template-columns:1fr;gap:14px}
@@ -848,6 +843,11 @@
       <details><summary>Est-ce que je garde la main sur mon logement ?</summary><p>Oui, totalement. Votre logement reste le vôtre, vous fixez vos disponibilités et vos prix. On s'occupe du travail sur place.</p></details>
       <details><summary>Vous vous occupez du ménage vous-mêmes ?</summary><p>Oui, le ménage et la préparation du linge sont assurés par notre équipe entre chaque séjour.</p></details>
       <details><summary>Comment démarre-t-on ?</summary><p>Vous nous contactez, on échange sur votre logement, et on vous fait une proposition claire sans engagement. Si ça vous convient, on prépare tout et on lance.</p></details>
+      <details><summary>Sur quelles plateformes gérez-vous les annonces ?</summary><p>Airbnb, Booking et Abritel. On crée et optimise vos annonces, et on synchronise les calendriers pour éviter tout risque de double réservation.</p></details>
+      <details><summary>Combien mon logement peut-il rapporter ?</summary><p>Ça dépend du bien, de son emplacement et de la saison. C'est justement le but de l'estimation gratuite : on évalue le potentiel de revenus de votre logement, sans engagement.</p></details>
+      <details><summary>Y a-t-il des frais pour démarrer ?</summary><p>Non. Avec la formule tout compris, rien à avancer : on se rémunère uniquement sur les réservations. Vous ne payez que quand votre logement vous rapporte.</p></details>
+      <details><summary>Que se passe-t-il en cas de problème pendant un séjour ?</summary><p>On est joignables et sur place rapidement. Fuite, panne, souci d'accès : on gère directement avec le voyageur et notre réseau d'artisans locaux, sans vous déranger.</p></details>
+      <details><summary>Faut-il un engagement de durée ?</summary><p>Non, on démarre sans engagement. L'idée est que vous restiez parce que le service vous convient, pas parce qu'un contrat vous y oblige.</p></details>
     </div>
   </div>
 </section>
