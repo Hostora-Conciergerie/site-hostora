@@ -130,6 +130,8 @@
   .pb6{bottom:24px;left:30%;animation:bubbleFloat 9s ease-in-out infinite 5.5s}
   .pb7{bottom:14px;right:24%;animation:bubbleFloat 9s ease-in-out infinite 6.6s}
   .pb8{bottom:22px;right:6%;animation:bubbleFloat 9s ease-in-out infinite 7.7s}
+  .pb9{top:44%;left:2%;animation:bubbleFloat 9s ease-in-out infinite 2.8s}
+  .pb10{top:52%;right:2%;animation:bubbleFloat 9s ease-in-out infinite 6.2s}
   @keyframes bubbleFloat{
     0%{opacity:0;transform:translateY(8px) scale(.94)}
     7%{opacity:.9;transform:translateY(0) scale(1)}
@@ -139,7 +141,7 @@
   }
   @media(prefers-reduced-motion:reduce){.pay-bubble{animation:none;opacity:0}}
   @media(max-width:760px){
-    .pb2,.pb3,.pb6,.pb7{display:none}
+    .pb2,.pb3,.pb6,.pb7,.pb9,.pb10{display:none}
     .pay-bubble{padding:6px 11px}
     .pb-amount{font-size:13px}
     .pb-label{font-size:8.5px}
@@ -275,7 +277,7 @@
   /* Zone */
   .zone{background:var(--accent);color:#fff;position:relative;overflow:hidden}
   .zone .wrap{position:relative;z-index:1}
-  .zone-illus{position:absolute;right:-30px;bottom:-10px;width:min(640px,66%);opacity:.16;pointer-events:none;user-select:none;z-index:0}
+  .zone-illus{position:absolute;right:-20px;bottom:0;width:min(560px,60%);opacity:.13;pointer-events:none;user-select:none;z-index:0}
   .zone-illus svg{width:100%;height:auto;display:block}
   .zone .eyebrow{color:#e7c9b6}
   .zone .head h2,.zone .head p{color:#fff}
@@ -554,6 +556,8 @@
     <div class="pay-bubble pb6"><span class="pb-amount">+465&nbsp;€</span><span class="pb-label">Virement Abritel</span></div>
     <div class="pay-bubble pb7"><span class="pb-amount">+920&nbsp;€</span><span class="pb-label">Virement Booking</span></div>
     <div class="pay-bubble pb8"><span class="pb-amount">+1&nbsp;050&nbsp;€</span><span class="pb-label">Virement Airbnb</span></div>
+    <div class="pay-bubble pb9"><span class="pb-amount">+390&nbsp;€</span><span class="pb-label">Virement Booking</span></div>
+    <div class="pay-bubble pb10"><span class="pb-amount">+725&nbsp;€</span><span class="pb-label">Virement Airbnb</span></div>
   </div>
   <div class="wrap">
     <div class="head center">
@@ -688,18 +692,15 @@
 <!-- ZONE -->
 <section class="zone" id="zone">
   <div class="zone-illus" aria-hidden="true">
-    <svg viewBox="0 0 600 300" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M20 250 q40 -8 80 0 t80 0 t80 0 t80 0 t80 0 t80 0" opacity=".55"/>
-      <path d="M50 270 q40 -8 80 0 t80 0 t80 0 t80 0 t80 0" opacity=".4"/>
+    <svg viewBox="0 0 600 300" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M70 256 q65 -7 130 0 t130 0 t130 0" opacity=".4"/>
       <path d="M40 212 Q300 158 560 212"/>
-      <path d="M92 212 Q300 42 508 212"/>
-      <line x1="153" y1="166" x2="153" y2="198"/>
-      <line x1="216" y1="138" x2="216" y2="190"/>
-      <line x1="300" y1="124" x2="300" y2="185"/>
-      <line x1="384" y1="138" x2="384" y2="190"/>
-      <line x1="447" y1="166" x2="447" y2="198"/>
-      <line x1="92" y1="212" x2="92" y2="242"/>
-      <line x1="508" y1="212" x2="508" y2="242"/>
+      <path d="M92 212 Q300 46 508 212"/>
+      <line x1="180" y1="150" x2="180" y2="194"/>
+      <line x1="300" y1="122" x2="300" y2="185"/>
+      <line x1="420" y1="150" x2="420" y2="194"/>
+      <line x1="92" y1="212" x2="92" y2="240"/>
+      <line x1="508" y1="212" x2="508" y2="240"/>
     </svg>
   </div>
   <div class="wrap">
