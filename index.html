@@ -17,7 +17,7 @@
 <script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Great+Vibes&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#faf7f2;
@@ -146,7 +146,7 @@
 
   /* Gains */
   .gains{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
-  .gains::before{content:"H";position:absolute;right:1%;top:52%;transform:translateY(-50%);font-family:'Pinyon Script',cursive;font-size:360px;line-height:0;color:var(--accent);opacity:.045;pointer-events:none;user-select:none}
+  .gains::before{content:"H";position:absolute;right:1%;top:52%;transform:translateY(-50%);font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:300px;line-height:0;color:var(--accent);opacity:.05;pointer-events:none;user-select:none}
   .gains .wrap{position:relative;z-index:1}
   .gains-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;text-align:center;margin-top:6px}
   .gstat b{display:block;font-family:'Fraunces',serif;font-size:clamp(42px,5vw,62px);font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.02em}
@@ -461,7 +461,7 @@
       </div>
     </div>
     <div class="hero-photo">
-      <img src="images/l4-1.jpg" alt="Séjour lumineux avec mezzanine d'un logement à Saint-Louis">
+      <img src="images/l4-1.jpg" alt="Séjour lumineux avec mezzanine d'un logement à Saint-Louis" width="900" height="1200" fetchpriority="high">
       <div class="hero-badge"><b>Des logements soignés</b>prêts à accueillir vos voyageurs</div>
     </div>
   </div>
