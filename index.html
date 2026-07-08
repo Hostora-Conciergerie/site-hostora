@@ -93,8 +93,9 @@
 
   /* Hero */
   .hero{padding:100px 0 82px;position:relative;overflow:hidden}
+  .hero::before{content:"H";position:absolute;left:-3%;top:47%;transform:translateY(-50%);font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:clamp(300px,44vw,600px);line-height:0;color:var(--accent);opacity:.045;pointer-events:none;user-select:none;z-index:0}
   .hero-orbs{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-  .hero-orbs span{position:absolute;border-radius:50%;filter:blur(66px);opacity:.55;will-change:transform}
+  .hero-orbs span{position:absolute;border-radius:50%;filter:blur(72px);opacity:.4;will-change:transform}
   .hero-orbs span:nth-child(1){width:440px;height:440px;background:rgba(61,92,74,.42);top:-120px;left:-90px;animation:orb1 21s ease-in-out infinite alternate}
   .hero-orbs span:nth-child(2){width:500px;height:500px;background:rgba(192,122,82,.36);top:-80px;right:-120px;animation:orb2 25s ease-in-out infinite alternate}
   .hero-orbs span:nth-child(3){width:380px;height:380px;background:rgba(157,184,166,.42);bottom:-150px;left:38%;animation:orb3 28s ease-in-out infinite alternate}
@@ -436,6 +437,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
   <div class="pay-bubbles" aria-hidden="true">
     <div class="pay-bubble pb1"><span class="pb-amount">+864,50&nbsp;€</span><span class="pb-label">Virement Airbnb</span></div>
     <div class="pay-bubble pb2"><span class="pb-amount">+432&nbsp;€</span><span class="pb-label">Virement Booking</span></div>
